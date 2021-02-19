@@ -48,3 +48,15 @@ var messageDisplay = document.querySelector(".message-display");
 // event listeners
 
 receiveMessageButton.addEventListener("click", getRandomMessage);
+
+
+// event handler functions
+
+function getRandomMessage() {
+  if (radioInput.value === "affirmation") {
+    currentMessage = affirmations[getRandomIndex(affirmations)];
+  } else {
+    currentMessage = mantras[getRandomIndex(mantras)];
+  }
+  displayMessage(currentMessage);
+}
