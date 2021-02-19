@@ -13,16 +13,17 @@
     <main>
       <section>
         <h2 class="main-font-style">Which type of message?</h2>
-        <div id="message-choice-box">
-          <input type="radio" id="affirmation" name="message-type" value="affirmation">
+        <form id="message-choice-box">
+          <input type="radio" id="affirmation" name="choice" value="affirmation">
           <label for="affirmation" id="affirmation-label">affirmation</label>
-          <input type="radio" id="mantra" name="message-type" value="mantra">
+          <input type="radio" id="mantra" name="choice" value="mantra">
           <label for="mantra" id="mantra-label">mantra</label>
           <br class="break">
-          <button class="receive-message-button">Receive Message</button>
-        </div>
+          <button id="receive-message-button">Receive Message</button>
+        </form>
       </section>
       <section id="main-lower-box">
+        <aside class="message-display hidden"></aside>
         <img id="meditation-icon" src="assets/meditate.svg" alt="Meditation icon">
       </section>
     </main>
