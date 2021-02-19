@@ -60,3 +60,16 @@ function getRandomMessage() {
   }
   displayMessage(currentMessage);
 }
+
+
+// helper functions
+
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}
+
+function displayMessage(message) {
+  messageDisplay.innerText = currentMessage;
+  messageDisplay.classList.remove(".hidden");
+  meditationIcon.classList.add(".hidden");
+}
