@@ -37,6 +37,15 @@ input[type="radio"] {
   color: #ffffff;
 }
 
+.message-display {
+  font-size: 16px;
+  text-align: center;
+}
+
+.hidden {
+  display: none!important;
+}
+
 #receive-message-button {
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
