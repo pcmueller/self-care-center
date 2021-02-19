@@ -3,9 +3,29 @@
   <head>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <title class="main-font-style">Self Care Center</title>
   </head>
-  <body>
-  
+  <body class="body">
+    <header class="page-header main-font-style">
+      <br>
+      <h1>✨ Self Care Center ✨</h1>
+    </header>
+    <main>
+      <section>
+        <h2 class="main-font-style">Which type of message?</h2>
+        <div id="message-choice-box">
+          <input type="radio" id="affirmation" name="message-type" value="affirmation">
+          <label for="affirmation" id="affirmation-label">affirmation</label>
+          <input type="radio" id="mantra" name="message-type" value="mantra">
+          <label for="mantra" id="mantra-label">mantra</label>
+          <br class="break">
+          <button class="receive-message-button">Receive Message</button>
+        </div>
+      </section>
+      <section id="main-lower-div">
+        <img id="meditation-icon" src="assets/meditate.svg" alt="Meditation icon">
+      </section>
+    </main>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
