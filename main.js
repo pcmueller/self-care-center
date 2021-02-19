@@ -36,9 +36,15 @@ var affirmations = [
 
 var currentMessage = "";
 
+
 // HTML target variables
 
 var radioInput = document.querySelectorAll("input[name=choice]");
 var receiveMessageButton = document.querySelector("#receive-message-button");
 var meditationIcon = document.querySelector("#meditation-button");
 var messageDisplay = document.querySelector(".message-display");
+
+
+// event listeners
+
+receiveMessageButton.addEventListener("click", getRandomMessage);
