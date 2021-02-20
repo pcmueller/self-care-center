@@ -6,15 +6,19 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000; */
 
+* {
+}
 
 html {
   height: 100%;
   background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
-  height: auto;
-  position: relative;
+  /* height: auto;
+  position: relative; */
+  margin: 0;
 }
 
 h2 {
@@ -29,13 +33,29 @@ input[type="radio"] {
 } 
 
 .main-font-style {
-  font-family: 'Quicksand', sans-serif;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 0.7%;
 }
 
-.receive-message-button {
+.message-display {
+  font-size: 16px;
+  text-align: center;
+}
+
+.hidden {
+  display: none!important;
+}
+
+.meditation-icon {
+  vertical-align: middle;
+  max-width: 50%;
+  max-height: 50%;
+  position: relative;
+  margin: 4.5%;
+}
+
+
+#receive-message-button {
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   color: #ffffff;
@@ -61,7 +81,7 @@ input[type="radio"] {
   font-size: 19px;
   width: 582px;
   height: 105px;
-  margin: auto;
+  margin: 1% auto;
   background-color: #ffffff;
   text-align: center;
   border-radius: 9px;
@@ -74,12 +94,4 @@ input[type="radio"] {
   background-color: #ffffff;
   text-align: center;
   border-radius: 9px;
-}
-
-#meditation-icon {
-  vertical-align: middle;
-  max-width: 50%;
-  max-height: 50%;
-  position: relative;
-  margin: 4.5%;
 }
