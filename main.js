@@ -35,11 +35,20 @@ var affirmations = [
 ];
 
 var currentMessage = "";
+var radioSelected = undefined;
 
 
 // HTML target variables
 
-var radioInput = document.querySelectorAll("input[name=choice]");
+
+// OPTION #1
+var radioAffirm = document.getElementById("#affirmation");
+var radioMantra = document.getElementById("#mantra");
+
+// OPTION #2
+var radioInput = document.querySelectorAll("input");
+
+
 var receiveMessageButton = document.querySelector("#receive-message-button");
 var meditationIcon = document.querySelector("#meditation-button");
 var messageDisplay = document.querySelector(".message-display");
@@ -50,14 +59,42 @@ var messageDisplay = document.querySelector(".message-display");
 receiveMessageButton.addEventListener("click", getRandomMessage);
 
 
+// !!!TEST ZONE!!!
+console.log(radioInput);
+console.log(radioInput.length);
+
+
 // event handler functions
 
+// OPTION #1
+// conditional to test for Boolean 'checked' value of both radio elements, targeted separately by id
 function getRandomMessage() {
-  if (radioInput.value === "affirmation") {
+  if (radioAffirm.checked) {
     currentMessage = affirmations[getRandomIndex(affirmations)];
+    console.log("AFFIRMATION TIME");
+  } else if (radioMantra.checked) {
+    currentMessage = mantras[getRandomIndex(mantras)];
+    console.log("MANTRA TIME");
+  }
+//
+
+
+// OPTION #2
+// conditional iterating through input array (length of 2 radio buttons), executing on Boolean 'checked' value
+  for (var i = 0; i < radioInput.length; i++) {
+    if (radioInput[i].checked) {
+      radioSelected = radioInput[i].value;
+    }
+  }
+  if (radioSelected.value === "affirmation") {
+    currentMessage = affirmations[getRandomIndex(affirmations)];
+    console.log("AFFIRMATION TIME");
   } else {
     currentMessage = mantras[getRandomIndex(mantras)];
+    console.log("MANTRA TIME");
   }
+//
+
   displayMessage(currentMessage);
 }
 
