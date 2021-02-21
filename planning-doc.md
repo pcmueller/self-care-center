@@ -1,9 +1,9 @@
 # Solo Challenge - Self Care Center
 
 ##### Project Resources
-**Specs**: Self Care Center
-**GitHub repo**: https://github.com/pcmueller/self-care-center
-**GitHub page**: https://pcmueller.github.io/self-care-center/
+- **Specs**: https://frontend.turing.io/projects/module-1/self-care-center.html
+- **GitHub repo**: https://github.com/pcmueller/self-care-center
+- **GitHub page**: https://pcmueller.github.io/self-care-center/
 
 #### Planning Form: Questions & Answers
 2.18.21
