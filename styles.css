@@ -38,8 +38,11 @@ input[type="radio"] {
 }
 
 .message-display {
-  font-size: 16px;
+  font-size: 22px;
+  font-weight: 400;
   text-align: center;
+  padding: 7%;
+
 }
 
 .hidden {
@@ -50,7 +53,6 @@ input[type="radio"] {
   vertical-align: middle;
   max-width: 50%;
   max-height: 50%;
-  position: relative;
   margin: 4.5%;
 }
 
