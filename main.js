@@ -2,8 +2,8 @@
 
 var mantras = [
 "I feel, I exist",
+"Survival and growth",
 "I am a warrior, not a worrier",
-"Breathing in, I send myself love \n Breathing out, I send love to someone else who needs it",
 "I write my destiny",
 "Yesterday is not today",
 "I am calm, I am centered",
@@ -24,7 +24,6 @@ var mantras = [
 "I can only control myself",
 "I am free from anger",
 "The only constant is change",
-"In myself I trust",
 "You were born to be real, not to be perfect",
 "Don’t say maybe if you want to say no",
 "What’s meant to be will always find a way",
@@ -40,7 +39,6 @@ var affirmations = [
 "I have the freedom & power to create the life I desire",
 "I am a vessel for love",
 "I choose to be kind to myself and love myself unconditionally",
-"My possibilities are endless",
 "My creative potential is endless",
 "I am worthy of my dreams",
 "The more I give, the more I receive",
