@@ -60,6 +60,8 @@ When the clear button is clicked and the message is removed, the image of the me
 If you’ve added other buttons or inputs, be sure to add some error handling for them as well.
 Note: You can disable these buttons, hide them, or display a message to the user for error handling. The choice is yours!
 
+---
+
 ## Pseudocode
 
 
@@ -76,9 +78,9 @@ CSS
 - [ √ ]	Create classes for title (h1), question (h2), radio box, receive message button, and lower div.
 - [ √ ]	Add styling to all five classes
 
----
-- [ √ ]	Complete all by 9pm on Thursday 2/18
 
+- [ √ ]	Complete all by 9pm on Thursday 2/18
+---
 
 ### Iteration 1: MVP - Generate & Display Random Mantra or Affirmation
 
@@ -100,10 +102,9 @@ JS
 - [ √ ]	Create displayMessage function to add/remove ‘hidden’ from meditation-icon and message-display elements
 - [ √ ]	In displayMessage, use a conditional to run either getRandomMantra or getRandomAffirm function - depending on value of ‘checked’ property of radioInput variable - and return currentMessage variable value.
 
----
 - [ √ ]	Complete all by 9pm on ~~Friday 2/19~~ Saturday 2/20
 
-
+---
 ### Choose Your Own Adventure
 
 #### Adventure #1: All Messages Interface
@@ -117,5 +118,4 @@ HTML
 CSS
 - [  ] 
 
----
 - [  ] Complete all by 9pm on Sunday 2/21
