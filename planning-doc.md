@@ -16,6 +16,8 @@ I think my strengths lie in visualizing and mapping out the work flow in a progr
  
 I could grow by better understanding and utilizing the DOM.  I think I get it on a conceptual level, but I need to gain familiarity with its actual functionality, esp. in relation to the Data Model (i.e. the methodologies used in accessing each of these and the order of operations / best practices in manipulating them).
 
+---
+
 ### Iteration 0: Build Out Comp					
 target: *9pm on Thurs 2.18.21*
 
