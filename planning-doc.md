@@ -112,21 +112,20 @@ JS
 #### Adventure #1: Error Handling & Clear Button
 
 HTML
-- [  ] Add section element below 'message-box' to contain clear button
-- [  ] Add button element with 'clear-message-button' class value inside new 'clear-button-box' element
-
+- [ √ ] Add 'clear-button-box' <section> element below 'message-box' element
+- [ √ ] Add "Clear Message" <button> with 'clear-message-button' class assigned, inside 'message-box' element
 
 CSS
-- [  ] Add 'clear-message-button' and 'clear-button-box' classes
+- [ √ ] Add 'clear-message-button' class and styling
+- [ √ ] Add 'clear-button-box' class and configure padding to position button right below 'message-box'
 
 JS
 - [ √ ] Add conditional so that currentMessage only receives string value if a radio button is checked
 - [ √ ] Add conditional so that displayMessage only runs if currentMessage has truthy value
 
 The user can click a clear button, which clears the page of any message.
-- [  ] Target 'clear-message-button' and add listener for 'click' event, invoking 'clearMessage' function
-- [  ] Declare clearMessage function and inside invoke new 'displayIcon' helper function
-- [  ] Declare displayIcon function and add code to reverse displayMessage functionality
-- [  ] Configure clearMessage to only run displayIcon if (!messageDisplay.classList(includes("hidden"));
+- [ √ ] Inside displayMessage function, add line to remove .hidden class from "Clear Message" button element
+- [ √ ] Target 'clear-message-button' and add listener for 'click' event, invoking 'clearMessage' function
+- [ √ ] Declare clearMessage function and add functionality to reverse actions of dislayMessage
 
-- [  ] Complete all by 9pm on Sunday 2/21
+- [ √ ] Complete all by 9pm on Sunday 2/21

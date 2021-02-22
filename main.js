@@ -77,7 +77,6 @@ var messageDisplay = document.querySelector(".message-display");
 
 receiveMessageButton.addEventListener("click", getRandomMessage);
 
-
 // event handler functions
 
 function getRandomMessage() {
@@ -99,6 +98,7 @@ function getRandomMessage() {
     displayMessage(currentMessage);
   }
 }
+
 // helper functions
 
 function getRandomIndex(array) {
@@ -108,5 +108,7 @@ function getRandomIndex(array) {
 function displayMessage(message) {
   messageDisplay.innerText = currentMessage;
   messageDisplay.classList.remove("hidden");
+  clearMessageButton.classList.remove("hidden");
   meditationIcon.classList.add("hidden");
 }
+
