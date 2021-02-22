@@ -113,3 +113,9 @@ function displayMessage(message) {
   meditationIcon.classList.add("hidden");
 }
 
+function clearMessage() {
+  messageDisplay.innerText = "";
+  messageDisplay.classList.add("hidden");
+  clearMessageButton.classList.add("hidden");
+  meditationIcon.classList.remove("hidden");
+}
