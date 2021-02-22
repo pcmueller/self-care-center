@@ -71,11 +71,12 @@ var radioInput = document.querySelectorAll("input[name=choice]");
 var receiveMessageButton = document.querySelector("#receive-message-button");
 var meditationIcon = document.querySelector(".meditation-icon");
 var messageDisplay = document.querySelector(".message-display");
-
+var clearMessageButton = document.querySelector(".clear-message-button");
 
 // event listeners
 
 receiveMessageButton.addEventListener("click", getRandomMessage);
+clearMessageButton.addEventListener("click", clearMessage);
 
 // event handler functions
 
