@@ -2,8 +2,8 @@
 
 var mantras = [
 "I feel, I exist",
+"Survival and growth",
 "I am a warrior, not a worrier",
-"Breathing in, I send myself love \n Breathing out, I send love to someone else who needs it",
 "I write my destiny",
 "Yesterday is not today",
 "I am calm, I am centered",
@@ -24,7 +24,6 @@ var mantras = [
 "I can only control myself",
 "I am free from anger",
 "The only constant is change",
-"In myself I trust",
 "You were born to be real, not to be perfect",
 "Don’t say maybe if you want to say no",
 "What’s meant to be will always find a way",
@@ -40,7 +39,6 @@ var affirmations = [
 "I have the freedom & power to create the life I desire",
 "I am a vessel for love",
 "I choose to be kind to myself and love myself unconditionally",
-"My possibilities are endless",
 "My creative potential is endless",
 "I am worthy of my dreams",
 "The more I give, the more I receive",
@@ -73,12 +71,12 @@ var radioInput = document.querySelectorAll("input[name=choice]");
 var receiveMessageButton = document.querySelector("#receive-message-button");
 var meditationIcon = document.querySelector(".meditation-icon");
 var messageDisplay = document.querySelector(".message-display");
-
+var clearMessageButton = document.querySelector(".clear-message-button");
 
 // event listeners
 
 receiveMessageButton.addEventListener("click", getRandomMessage);
-
+clearMessageButton.addEventListener("click", clearMessage);
 
 // event handler functions
 
@@ -101,6 +99,7 @@ function getRandomMessage() {
     displayMessage(currentMessage);
   }
 }
+
 // helper functions
 
 function getRandomIndex(array) {
@@ -110,5 +109,13 @@ function getRandomIndex(array) {
 function displayMessage(message) {
   messageDisplay.innerText = currentMessage;
   messageDisplay.classList.remove("hidden");
+  clearMessageButton.classList.remove("hidden");
   meditationIcon.classList.add("hidden");
+}
+
+function clearMessage() {
+  messageDisplay.innerText = "";
+  messageDisplay.classList.add("hidden");
+  clearMessageButton.classList.add("hidden");
+  meditationIcon.classList.remove("hidden");
 }

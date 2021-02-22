@@ -37,6 +37,15 @@ In the interest of giving you opportunities to individualize the skills you buil
 When you choose a feature, you must complete all bullet points!
 NOTE: You should absolutely not be working on this unless your UI is solid and you are 100% sure that your MVP is fully functional and bug free.
 
+#### Error handling and clear button
+
+User should not be able to click the “Receive Message” button unless they have selected a message option.
+The user can click a clear button, which clears the page of any message.
+User should only be able to click the clear button if a message is visible.
+When the clear button is clicked and the message is removed, the image of the meditation icon should re-appear.
+If you’ve added other buttons or inputs, be sure to add some error handling for them as well.
+Note: You can disable these buttons, hide them, or display a message to the user for error handling. The choice is yours!
+
 #### All Messages interface
 
 Add a “View All Messages” button.
@@ -53,15 +62,6 @@ When a new message is added, that message should automatically be displayed in t
 As you add these new elements to the page, be sure to match the style of existing elements.
 NOTE: None of this needs to persist on page refresh, unless you also complete the local storage feature
 
-#### Error handling and clear button
-
-User should not be able to click the “Receive Message” button unless they have selected a message option.
-The user can click a clear button, which clears the page of any message.
-User should only be able to click the clear button if a message is visible.
-When the clear button is clicked and the message is removed, the image of the meditation icon should re-appear.
-If you’ve added other buttons or inputs, be sure to add some error handling for them as well.
-Note: You can disable these buttons, hide them, or display a message to the user for error handling. The choice is yours!
-
 ---
 
 ## Pseudocode
@@ -77,7 +77,7 @@ HTML
 
 CSS
 - [ √ ]	Set background, add any necessary gradient effects
-- [ √ ]	Create classes for title (h1), question (h2), radio box, receive message button, and lower div.
+- [ √ ]	Create classes for title (h1), question (h2), radio box, receive message button, and message box.
 - [ √ ]	Add styling to all five classes
 
 
@@ -109,15 +109,23 @@ JS
 ---
 ### Choose Your Own Adventure
 
-#### Adventure #1: All Messages Interface
-
-JS
-- [  ]	
+#### Adventure #1: Error Handling & Clear Button
 
 HTML
-- [  ] 
+- [ √ ] Add 'clear-button-box' <section> element below 'message-box' element
+- [ √ ] Add "Clear Message" <button> with 'clear-message-button' class assigned, inside 'message-box' element
 
 CSS
-- [  ] 
+- [ √ ] Add 'clear-message-button' class and styling
+- [ √ ] Add 'clear-button-box' class and configure padding to position button right below 'message-box'
 
-- [  ] Complete all by 9pm on Sunday 2/21
+JS
+- [ √ ] Add conditional so that currentMessage only receives string value if a radio button is checked
+- [ √ ] Add conditional so that displayMessage only runs if currentMessage has truthy value
+
+The user can click a clear button, which clears the page of any message.
+- [ √ ] Inside displayMessage function, add line to remove .hidden class from "Clear Message" button element
+- [ √ ] Target 'clear-message-button' and add listener for 'click' event, invoking 'clearMessage' function
+- [ √ ] Declare clearMessage function and add functionality to reverse actions of dislayMessage
+
+- [ √ ] Complete all by 9pm on Sunday 2/21

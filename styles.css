@@ -41,12 +41,7 @@ input[type="radio"] {
   font-size: 22px;
   font-weight: 400;
   text-align: center;
-  padding: 7%;
-
-}
-
-.hidden {
-  display: none!important;
+  padding: 7.5%;
 }
 
 .meditation-icon {
@@ -56,9 +51,21 @@ input[type="radio"] {
   margin: 4.5%;
 }
 
+.clear-message-button {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #134d71;
+  height: 24px;
+  width: 160px;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+
+.hidden {
+  display: none!important;
+}
 
 #receive-message-button {
-  font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   color: #ffffff;
   background-color: #134d71;
@@ -77,7 +84,7 @@ input[type="radio"] {
   margin-right: 2%;
 }
 
-#message-choice-box {
+#radio-box {
   font-family: 'Quicksand', sans-serif;
   font-style: italic;
   font-size: 19px;
@@ -89,11 +96,17 @@ input[type="radio"] {
   border-radius: 9px;
 }
 
-#main-lower-box {
+#message-box {
   width: 860px;
   height: 160px;
-  margin: 7% auto 2% auto;
+  margin: 7% auto 0 auto;
   background-color: #ffffff;
   text-align: center;
   border-radius: 9px;
+}
+
+#clear-button-box {
+  text-align: center;
+  border-radius: 9px;
+  padding-top: 0.5%;
 }
